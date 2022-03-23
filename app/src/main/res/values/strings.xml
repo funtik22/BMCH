@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">BMCH</string>
+    <string name="start_train">Начать тренировку</string>
+    <string name="up">Up</string>
+    <string name="yourself">yourself</string>
+    <string name="and_your">and your</string>
+    <string name="body">body</string>
 </resources>
