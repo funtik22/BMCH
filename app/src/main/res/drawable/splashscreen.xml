@@ -6,5 +6,4 @@
         <bitmap android:src="@drawable/icon_logo"
             android:gravity="center"/>
     </item>
-
 </layer-list>
