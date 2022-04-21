@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
         <activity
+            android:name=".descriptionExerciseActivity"
+            android:exported="false" />
+        <activity
             android:name=".ChangeExercisesActivity"
             android:exported="false" />
         <activity
@@ -24,7 +27,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"

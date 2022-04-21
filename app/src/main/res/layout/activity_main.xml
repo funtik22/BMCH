@@ -8,8 +8,6 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.button.MaterialButton
-        app:cornerRadius="6dp"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
         android:id="@+id/buttonStartTrain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,9 +19,11 @@
         android:paddingEnd="40dp"
         android:text="@string/start_train"
         android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        android:textStyle="normal"
+        android:textStyle="bold"
+        app:cornerRadius="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
