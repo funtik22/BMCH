@@ -1,7 +1,9 @@
 package ru.a.o.mikhailov.bmch
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.google.android.youtube.player.YouTubeBaseActivity
 import ru.a.o.mikhailov.bmch.databinding.ActivityChangeExercisesBinding
 
 class ChangeExercisesActivity : AppCompatActivity() {
@@ -13,7 +15,8 @@ class ChangeExercisesActivity : AppCompatActivity() {
         binding = ActivityChangeExercisesBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.imageButtonPushUps.setOnClickListener{
-
+            val intent = Intent(this, DescriptionExerciseActivity::class.java)
+            startActivity(intent)
         }
         binding.imageButtonPullUps.setOnClickListener{
 
