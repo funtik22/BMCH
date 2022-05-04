@@ -1,6 +1,7 @@
 package ru.a.o.mikhailov.bmch
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
 import android.widget.Toast
@@ -23,7 +24,10 @@ class DescriptionExerciseActivity : YouTubeBaseActivity() {
         binding = ActivityDescriptionExerciseBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+        binding.buttonNext.setOnClickListener {
+            intent = Intent(this, CameraActivity::class.java)
+            startActivity(intent)
+        }
         binding.tvDescriptionExercise.movementMethod = ScrollingMovementMethod()
         binding.tvDescriptionExercise.text = "• ровное расположение тела, без прогиба поясницы и провала груди;\n\n" +
                 "• руки расположить чуть шире плеч, перпендикулярно к полу;\n\n" +
