@@ -29,13 +29,13 @@ class DescriptionExerciseActivity : YouTubeBaseActivity() {
             startActivity(intent)
         }
         binding.tvDescriptionExercise.movementMethod = ScrollingMovementMethod()
-        binding.tvDescriptionExercise.text = "• ровное расположение тела, без прогиба поясницы и провала груди;\n\n" +
+        ("• ровное расположение тела, без прогиба поясницы и провала груди;\n\n" +
                 "• руки расположить чуть шире плеч, перпендикулярно к полу;\n\n" +
                 "• подъем и опускание должны происходить плавно;\n\n" +
                 "• соблюдать правильное дыхание: на опускание делать вдох, а на подъеме — выдох;\n\n" +
                 "• при опускании руки уходят не широко и не вдоль туловища (примерно 45 градусов, относительно тела);\n\n" +
                 "• в верхней точке следует округлять грудной отдел позвоночника, сводить грудные мышцы;\n\n" +
-                "• опускаться примерно до того, чтобы расстояние до пола было примерно 10-15 сантиметров.\n\n"
+                "• опускаться примерно до того, чтобы расстояние до пола было примерно 10-15 сантиметров.\n\n").also { binding.tvDescriptionExercise.text = it }
 
         youtubePlayerInit = object: YouTubePlayer.OnInitializedListener{
             override fun onInitializationSuccess(
